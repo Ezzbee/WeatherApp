@@ -9,13 +9,13 @@ const Forecast = (props) => {
 
   function getForecast(e) {
     e.preventDefault();
-    // Next, make the call to the openweathermap API, with the parameters for the specified city
-    // fetch(
-    //   `http://api.openweathermap.org/data/2.5/weather?units=${unit}&q=${city}&appid=${keys.openweathermap_API_KEY}`
-    // )
-   fetch(
-     "http://api.openweathermap.org/data/2.5/weather?units=metric&q=durban&appid=d6e0e85a41968aaf6240b5ed27522ebd"
-   )
+    Next, make the call to the openweathermap API, with the parameters for the specified city
+    fetch(
+      `http://api.openweathermap.org/data/2.5/weather?units=${unit}&q=${city}&appid=${keys.openweathermap_API_KEY}`
+    )
+   // fetch(
+   //   "http://api.openweathermap.org/data/2.5/weather?units=metric&q=durban&appid=d6e0e85a41968aaf6240b5ed27522ebd"
+   // )
 
       .then((response) => response.json())
       .then(
@@ -34,7 +34,7 @@ const Forecast = (props) => {
   return (
     // The following JSX code block renders the form that captures the user input
     <div>
-      <h2>Currenttt Weather Conditions</h2>
+      <h2>Current Weather Conditions</h2>
       <div>
         <WeatherCondition responseObj={responseObj} unit={unit} />
       </div>
