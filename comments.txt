@@ -1,0 +1,10 @@
+The app has been updated to take care of a situation where the location entered by the user is not found.
+
+Ideally, the location list should have been loaded into a SELECT element on the DOM and the user selects from
+the list. However, the list as downloaded from openweathermap.org has about 200,000 rows, which makes using this approach 
+a bit impractical. As a matter of fact, it took like forever, when it was attempted.
+
+Actually, the task folder can be found in the zip file named example.zip. Anyway, I've made a few amendment in the codes and 
+rename the zip file as Task 14 Assignment. Sorry for the mix up.
+
+
