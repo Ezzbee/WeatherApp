@@ -9,7 +9,7 @@ const Forecast = (props) => {
 
   function getForecast(e) {
     e.preventDefault();
-    Next, make the call to the openweathermap API, with the parameters for the specified city
+  //  Next, make the call to the openweathermap API, with the parameters for the specified city
     fetch(
       `http://api.openweathermap.org/data/2.5/weather?units=${unit}&q=${city}&appid=${keys.openweathermap_API_KEY}`
     )
