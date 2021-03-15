@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import "isomorphic-fetch";
 import WeatherCondition from "./WeatherCondition";
 // The keys object contains the API keys
-const { keys } = require("./config/index.js");
+const { keys } = require("./config");
 
 const Forecast = (props) => {
   let [responseObj, setResponseObj] = useState({});
